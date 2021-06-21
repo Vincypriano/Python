@@ -14,10 +14,10 @@ while computador != jogador:
     sleep(1)
     if jogador > computador:
         print('Você digitou um numero maior!!',end='')
-        continue
-    if jogador < computador:
+        
+    elif jogador < computador:
         print('Você digitou um número Menor!!',end='')
-        continue
+        
     jogador = int(input((' Digite outro Numero: '.format(jogador,computador))))
     cont += 1
 
