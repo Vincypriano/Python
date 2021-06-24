@@ -16,8 +16,10 @@ d = {'key1':{'key2':'hello'}}
 d2 = d['key1']
 print(d2['key2'])
 '''
-d = {'k1':[{'nest_key':['this is deep',['hello']]}]}
+'''d = {'k1':[{'nest_key':['this is deep',['hello']]}]}
 d2 = d['k1'][0]
 d3 = d2['nest_key']
 d4 = d3[1]
-print (d4)
+print (d4)'''
+d = 'hello'
+print(d[::-1])
