@@ -21,5 +21,30 @@ d2 = d['k1'][0]
 d3 = d2['nest_key']
 d4 = d3[1]
 print (d4)'''
-d = 'hello'
-print(d[::-1])
+#d = 'hello'
+#print(d[::-1])
+##a = d[1:4]
+#print(a)
+'''list = [1,2,[3,4,'hello']]
+list [2][2] = 'goodbye'
+print (list)'''
+#from typing import List
+
+
+#list = [1,2,2,33,4,4,11,22,3,3,2]
+#print(sorted(list))
+minha_string = str(input('Digite uma frase: '))
+tamanho_string = len(minha_string)
+
+c = 0
+contagem = 0
+letra = ''
+
+while c < tamanho_string:
+    conta = minha_string.count(minha_string[c])
+
+    if contagem < conta and minha_string[c].strip ():
+        letra = minha_string[c]
+        contagem = conta
+    c += 1
+print(f'{letra} {contagem} ')
