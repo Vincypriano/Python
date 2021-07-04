@@ -33,7 +33,7 @@ print (list)'''
 
 #list = [1,2,2,33,4,4,11,22,3,3,2]
 #print(sorted(list))
-minha_string = str(input('Digite uma frase: '))
+'''minha_string = str(input('Digite uma frase: '))
 tamanho_string = len(minha_string)
 
 c = 0
@@ -47,4 +47,41 @@ while c < tamanho_string:
         letra = minha_string[c]
         contagem = conta
     c += 1
-print(f'{letra} {contagem} ')
+print(f'{letra} {contagem} ')'''
+lista_nomes = ['vinicius','silvia','juliana','cassio','Nice','João']
+lista_nomes.sort ()
+lista_nomes.append('Elaine')
+print(lista_nomes[::-1])
+print(lista_nomes[0])
+lista = lista_nomes 
+lista.remove('silvia')
+print(lista)
+if 'silvia' in lista:
+    print('Faz parte da familia!!!')
+else:
+    print('Foi removida com .remove()')
+print(lista_nomes)
+print(len(lista_nomes))
+lista.pop()
+print(len(lista_nomes))
+print(lista_nomes)
+print(lista[::-1])
+print(len(lista))
+lista_nomes.insert(0, 'Vanda')
+print(lista)
+nome_removido = lista_nomes.pop(3)
+print(nome_removido)
+nome_familia = ('Pito','Lu','Mano','Paty')
+print(nome_familia)
+lista2 = list(nome_familia)
+for c in range (0,4):
+    lista.insert(-1,lista2[c])
+print(len(lista),'\n',*lista)
+n = len(lista)
+c = 0
+t_1 = '',
+while c < n:
+    t_1 = tuple(lista[c])
+    print(*t_1,c,type(t_1))
+    c += 1
+

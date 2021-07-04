@@ -17,4 +17,3 @@ if gen == 1:
         print('Seu ano de alistamento será {}'.format(data - (alis - 18)))
 else:
     print('Você não pode se alistar!!')
-2
