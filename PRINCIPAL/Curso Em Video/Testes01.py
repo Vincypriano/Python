@@ -29,3 +29,18 @@ print(type(t_1),t_1,len(t_1))
 string_2 = t_1[0]
 print(string_2.title(), string_2.istitle())
 
+dados_cidade = {
+    'nome' : 'São Paulo',
+    'estado' : 'São Paulo',
+    'area_km2' : 1521,
+    'população_milhões' : 12.18,
+
+
+}
+dados_cidade['pais'] = 'Brasil'
+print(dados_cidade)
+dados_cidade_rem = dados_cidade.pop('nome')
+print(dados_cidade_rem)
+for chave in dados_cidade:
+    print(chave)
+    print(f'{chave} : {dados_cidade[chave]}')
