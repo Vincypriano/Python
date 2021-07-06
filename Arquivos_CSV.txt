@@ -1,5 +1,4 @@
-with open('Arquivos_CSV.txt','w', encoding='utf-8') as arquivo:
-    arquivo.write('''CSV
+CSV
 O formato CSV (Comma Separated Values, ou Valores Separados por Vírgula) é um arquivo de texto que representa dados em forma de tabela de forma simples.
 
 Cada linha do arquivo de texto é uma linha da tabela, e as colunas são separadas por vírgulas.
@@ -15,12 +14,14 @@ Poderíamos manipular estes arquivos diretamente usando as funções de arquivo 
 import csv
 
 with open('tabelaExemplo.csv', 'w') as arquivo:
-    escritor = csv.writer(arquivo, delimiter = ';', lineterminator = '\n') #criando um escritor
+    escritor = csv.writer(arquivo, delimiter = ';', lineterminator = '
+') #criando um escritor
     lista = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     escritor.writerows(lista) # writerows escreve cada "sublista" da lista como uma linha
 
 with open('tabelaExemplo.csv', "r") as arquivo:
-    leitor = csv.reader(arquivo, delimiter = ';', lineterminator = '\n') #criando um leitor
+    leitor = csv.reader(arquivo, delimiter = ';', lineterminator = '
+') #criando um leitor
     print("O conteúdo do arquivo é:")
     print(leitor)
     for linha in leitor:
@@ -43,6 +44,4 @@ with open('names.csv', 'w', newline='') as csvfile:
     writer.writeheader() # escrevemos o cabeçalho
     writer.writerow({'first_name': 'Senhor', 'last_name': 'Batata'}) # escrevemos linhas com as chaves e valores
     writer.writerow({'first_name': 'Will', 'last_name': 'Smith'})
-    writer.writerow({'first_name': 'Elon', 'last_name': 'Musk'})''')
-with open("c:/Users/Elisabeth/Desktop/VINI/Python/Arquivos_CSV.txt",'r', encoding='utf-8') as arquivo:
-    print(arquivo.read(), end='')
+    writer.writerow({'first_name': 'Elon', 'last_name': 'Musk'})
