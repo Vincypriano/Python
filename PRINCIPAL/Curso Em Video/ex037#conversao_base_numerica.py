@@ -12,4 +12,6 @@ if opção == 1:
 elif opção == 2:
     print( 'O Numero {} em OCTAL fica {}'.format(num,oct(num)[2:]))
 elif opção == 3:
-    print('O Numero {} em HEXADECIMAL fica {}')
+    print('O Numero {} em HEXADECIMAL fica {}'.format(num,hex(num)[2:]))
+else:
+    print('Opção inválida. Tente novamente...')
