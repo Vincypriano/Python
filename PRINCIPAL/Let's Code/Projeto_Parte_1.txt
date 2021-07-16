@@ -1,5 +1,4 @@
-with open ("c:/Users/Elisabeth/Desktop/VINI/Python/PRINCIPAL/Let's Code/Projeto_Parte_1.txt",'w', encoding='utf-8') as arquivo:
-    arquivo.write('''Datetime
+Datetime
 Para treinar o uso da biblioteca datetime, execute as funções do código a seguir, tentando prever os seus resultados:
 
 import datetime
@@ -27,7 +26,4 @@ dt = datetime.datetime.strptime(dt_str, '%B %d, %Y')
 print(dt)
 
 # strftime - Datetime para String
-# strptime - String para Datetime''')
-with open("c:/Users/Elisabeth/Desktop/VINI/Python/PRINCIPAL/Let's Code/Projeto_Parte_1.txt",'r', encoding='utf-8') as arquivo:
-    print(arquivo.read(),end='')
-
+# strptime - String para Datetime
