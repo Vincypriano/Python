@@ -1,5 +1,5 @@
 import requests as r
-import datetime 
+import datetime as dt
 import csv
 from PIL import Image
 from IPython.display import display
@@ -21,25 +21,25 @@ final_data.insert(0,['Confirmados', 'Obitos','Recuperados','Ativos','Data'])
 
 for i in range(1,len(final_data)):
     final_data[i][DATA] = final_data[i][DATA][:10]
-#print(final_data)
-'''print(dt.time(12,6,21,7), 'Hora:minuto:segundo.microsegundo')
+print(final_data)
+print(dt.time(12,6,21,7), 'Hora:minuto:segundo.microsegundo')
 print('----')
 print(dt.date(2020,4,25), 'Ano-mês-dia')
 print('----')
-print(dt.datetime(2020,4,25,12,6,21,7), 'Ano-mês-dia Hora:minuto:segundo.microsegundo')'''
-'''natal = dt.date(2020,12,25)
+print(dt.datetime(2020,4,25,12,6,21,7), 'Ano-mês-dia Hora:minuto:segundo.microsegundo')
+natal = dt.date(2020,12,25)
 reveillon = dt.date(2021,1,1)
 
 print(reveillon - natal)
 print((reveillon - natal).days)
 print((reveillon - natal).seconds)
-print((reveillon - natal).microseconds)'''
+print((reveillon - natal).microseconds)
 
 with open ('Brasil_covid.csv','w') as file:
     writer = csv.writer(file)
     writer.writerows(final_data)
     for i in range(1,len(final_data)):
-        final_data[i][DATA] = datetime.strptime(final_data[i][DATA], '%Y-%m-%d' )
+        final_data[i][DATA] = dt.date.strptime(final_data[i][DATA], '%Y-%m-%d' )
 print(final_data)  
 
 def get_datasets(y, labels):
