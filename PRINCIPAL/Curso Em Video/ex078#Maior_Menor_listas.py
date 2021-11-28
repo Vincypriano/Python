@@ -6,7 +6,7 @@ for c in range(0,5):                                                            
     num = input('Digite o {} número: '.format(c +1))
     l_1.insert(c,num)
     if c == 0:                                                                      # Se o contador estiver no primeiro indice ( 0 ) ambos os valores maior 
-        mair = menor = l_1[c]                                                       # e menor recebem o primeiro valor        
+        maior = menor = l_1[c]                                                       # e menor recebem o primeiro valor        
 
 maior = max(l_1)                                                                    # Metodo max() para inserir na variavel o maior valor da lista
 menor = min(l_1)                                                                    # Metodo min() para inserir na variável o menor valor da lista
