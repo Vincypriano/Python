@@ -15,8 +15,11 @@ def maior(*num):
             if valor > maior:
                 maior = valor
         cont += 1
-    print(f'Foram informados {cont} valores ao todo.')
-    print(f'O maior valor informado foi {maior}.')
+    if cont == 0:
+        print("Não foram encontrados valores...")
+    else:
+        print(f'Foram informados {cont} valores ao todo.')
+        print(f'O maior valor informado foi {maior}.')
 
 # Programa principal
 maior(1,9,5,7,1)
