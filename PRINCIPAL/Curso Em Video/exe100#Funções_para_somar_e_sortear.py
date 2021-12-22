@@ -16,11 +16,16 @@ def sortear(lista):
 
 
 def somaPar(lista):
-    soma = 0
+    soma = somai = 0
     for valor in lista:
         if valor % 2 == 0:
             soma += valor
-    print(f'Somando os valores de {lista}, temos {soma}')
+        else:
+            somai += valor
+    print(f'Somando os valores pares de {lista}, temos {soma}')
+    print(f'Somando os valores impares de {lista}, teremos {somai}')
+
+            
 
 
 

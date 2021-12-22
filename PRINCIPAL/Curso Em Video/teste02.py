@@ -1,8 +1,6 @@
-def lin(msg):
-    for i in len(msg):
-        print('-')
-        
-
-msg = str(input('Digite a mensagem: '))
-lin(msg)
+n = int(input("Digite um número para calcular seu fatorial: "))
+cont = n
+while cont > 0:
+    print(f'{cont} ', end='')
+    cont -= 1
     

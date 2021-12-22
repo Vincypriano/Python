@@ -6,7 +6,7 @@ num = int(input('Digite um número para \ncalcular seu fatorial:'))
 fat = 1
 cont = num
 print('Calculando {}!= '.format(num),end='')
-#while cont > 0:
+
 for cont in range(num,0,-1):
     print('{}'.format(cont), end='')
     print('x'if cont >1 else ' = ',end='')
