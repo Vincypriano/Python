@@ -31,3 +31,4 @@ print(re.findall(r've{3}m{1,2}', texto, flags=re.I))
 
 texto2 = 'João ama ser amado'
 print(re.findall(r'ama[od]{0,2}', texto2, flags=re.I))
+
