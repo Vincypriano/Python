@@ -1,5 +1,8 @@
-#=============================================
-#MENU
+# =============================================
+# MENU
+import os
+
+
 def Menu():
     print("\033[1;30;44m Unicesumar \33[m")
     print('''
@@ -9,16 +12,18 @@ def Menu():
 [ 2 ] Mostrar Todos os cadastros
 [ 0 ] Sair
         ''')
-    
-#==============================================
-#LÓGICA
+
+# ==============================================
+# LÓGICA
+
+
 def cad():
     while True:
         op = str(input("Digite sua opção: ")).strip()
         if op in '012':
             break
         print("Opção Inválida!!")
-    
+
     if op == '1':
         r = "S"
         while r == 'S':
@@ -34,30 +39,32 @@ def cad():
             Cadastro['Editora'] = str(input('Nome da Editora: ')).capitalize()
             Cod.append(Cadastro.copy())
             r = str(input("Quer continuar? [S/N] ")).upper().strip()
-            
+
         os.system("cls")
         Menu()
         cad()
-           
-    elif op == '2':            
+
+    elif op == '2':
         if len(Cod) == 0:
-            print("\nCadastro vazio.\n") 
+            print("\nCadastro vazio.\n")
             continua()
-            
+
         else:
-            for i,v in enumerate(Cod):
+            for i, v in enumerate(Cod):
                 print(f'\nCod : {i+1}')
-                for v,k in v.items():
+                for v, k in v.items():
                     print(f'{v} : {k}')
         continua()
     else:
         print("\nFIM DO PROGRAMA!!!")
-        
-#==========================================================
-#Continua
+
+# ==========================================================
+# Continua
+
+
 def continua():
-    while True:     
-        resp = str(input('Quer continuar? [S/N] ')).upper().strip()             
+    while True:
+        resp = str(input('Quer continuar? [S/N] ')).upper().strip()
         if resp in 'SN':
             break
         print('\nErro! Responda apenas S ou N.\n')
@@ -65,17 +72,17 @@ def continua():
         os.system("cls")
         Menu()
         cad()
-        
+
     if resp == 'S':
         os.system("cls")
         Menu()
         cad()
 
-#==========================================================
-#PROGRAMA 
-import os
- 
-os.system("cls")  
+
+# ==========================================================
+# PROGRAMA
+
+os.system("cls")
 Menu()
 Cadastro = {}
 Cod = []
